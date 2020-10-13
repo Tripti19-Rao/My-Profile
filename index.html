@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Profile</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="intro">
+                    <img id="m1" class="pic" src="2.jpg"/>
+                <div class="tittle">
+                    <h1>Tripti D Rao</h1>
+                    <button class="btn" onclick="m2()">Click Here</button>
+                </div>
+            </div>    
+                <div class="detail">    
+                    <hr>
+                    <h2>About Me</h2>
+                    <pr>I am from Karwar. I am studying in Sahyadri College of Engineering and Managment. My father is an Assistant Manager in LIC of India. My mother is a house-maker. My elder sister is studying MBBS third year.</pr>
+                    <hr>
+                    <h2>My Favourite Food</h2>
+                    <ol>
+                        <li>Veg</li>
+                        <ul>
+                            <li>Veg Biryani</li>
+                            <li>Fried Rice</li>
+                            <li>Paneer items</li>
+                            <li>Ghee Roast</li>
+                        </ul>
+                    </ol>
+                    <hr>
+                    <h2>My Strength</h2>
+                    <style>
+                        table, th, td {
+                          border: 1px solid black;
+                        }
+                    </style>
+                    <table>
+                        <tr>
+                            <td>1</td>
+                            <td>Coding</td>
+                            <td>I am good in coding</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>learner</td>
+                            <td>I am a quick learner</td>
+                        </tr>
+                        <tr>
+                        <td>3</td>
+                        <td>Time</td>
+                        <td>I am good in time managment</td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <h2>My Weaknesses</h2>
+                    <table class="tab">
+                        <tr>
+                            <td>1</td>
+                            <td>distraction</td>
+                            <td>I get distracted easily</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Lose hope</td>
+                            <td>Sometimes I give up easily</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Courage</td>
+                            <td>I lack courage when i really need to stand up</td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <h2>My Hobbies</h2>
+                    <pr>I love to sketch and read books. I also like to cook and code. I am an outdoor person so i love travelling and exploring. </pr>
+                    <hr>
+                </div>
+        </header>
+        <script>
+            function m2()
+            {
+                var Image_Id = document.getElementById('m1');
+                if (Image_Id.src.match("2.jpg")) {
+                    Image_Id.src = "3.jpg";
+                }
+                else{
+                    Image_Id.src = "2.jpg";
+                }
+            }
+        </script>
+    </body>
+</html>
+
